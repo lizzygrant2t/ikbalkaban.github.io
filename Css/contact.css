@@ -1,0 +1,112 @@
+/*! CONTACT HTML STYLE */
+
+
+:root{
+  --main-color: rgb(182, 128, 106);
+
+}
+.iletişim 
+{
+  
+  font-size: 30px;
+  color: bisque;
+  background-color: rgb(182, 128, 106);
+  border: solid bisque 2rem; 
+  border-radius: 3rem;
+  padding-left: 40% ;
+}
+
+form {
+  width:500px; /* Form genişliği */
+  margin: 0 auto; /* Formu merkezlemek için */
+  background-color:  rgb(182, 128, 106);
+ border: solid bisque 0.5rem;
+ 
+  
+}
+
+div {
+  margin-bottom: 15px; /* Her bir input alanı arasına boşluk ekler */
+ padding: 5px;
+
+}
+
+label {
+display: inline-block; /* Etiketler yan yana hizalanır */
+  width: 100px; /* Etiketlerin genişliği */
+  font-weight: bold; /* Kalın font */
+  padding: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 120px); /* Giriş alanlarının genişliği */
+  padding: 5px; /* Giriş alanlarının iç kenar boşluğu */
+  border: 1px solid  #604129; /* Kenarlık rengi ve kalınlığı */
+  border-radius: 5px; /* Kenarlık köşe yarıçapı */
+}
+
+button[type="submit"] {
+  padding: 10px 20px; /* Düğme iç kenar boşluğu */
+  background-color: rgb(182, 128, 106); /* Düğme arka plan rengi */
+  color: bisque; /* Düğme metin rengi */
+  border: solid bisque 0.5rem ; /* Kenarlık yok */
+  border-radius: 5px; /* Düğme köşe yarıçapı */
+  cursor: pointer; /* İşaretçi simgesi değiştirme */
+}
+
+button[type="submit"]:hover {
+  background-color: bisque; /* Fare üzerine gelindiğinde düğme arka plan rengi */
+  border: solid rgb(182, 128, 106) 0.5rem;
+  color: rgb(182, 128, 106);
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+}
+
+#countdown div {
+  margin: 0 10px;
+}
+
+#countdown span {
+  display: block;
+  font-size: 24px;
+}
+
+#countdown .time-label {
+  font-size: 14px;
+}
+.containe {
+  overflow: hidden;
+  position: relative;
+  height: 300px; /* Slider height */
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s ease; /* Transition effect */
+}
+
+.slider img {
+  width: 1500px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.panel {
+  display: none;
+}

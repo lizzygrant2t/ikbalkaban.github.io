@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sanat Galerisi</title>
+    <link rel="stylesheet" href="Css/Main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+
+  <body>
+
+    
+
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img 
+          class="logo-border"
+          src="Images/WhatsApp Görsel 2024-05-09 saat 14.29.04_95c49992-Photoroom.png-Photoroom.png"
+          alt="logo"
+        />
+       
+      
+      </a>
+      <nav class="navbar">
+        <a href="#" class="active">KENDİMCEART</a>
+        <a href="#">ÇİZDİĞİM BAZI RESİMLER</a>
+        <a href="#">ÖZEL SİPARİŞLER</a>
+        <a href="#">HAKKIMDA</a>
+
+        <a href="#">BLOGLARIM</a>
+
+        <a href="#">BİZİ DEĞERLENDİR</a>
+      </nav>
+
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button id="cart-btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="search here"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img
+            src="Images/resimlerim/WhatsApp Görsel 2024-05-12 saat 13.06.04_5d69a18a.jpg"
+            alt="menu"
+          />
+          <div class="content">
+            <h3>Stanger Things Max Çizimi</h3>
+
+            <div class="price">1000TL <span>1100TL</span></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img
+            src="Images/resimlerim/WhatsApp Görsel 2024-05-12 saat 13.06.04_c8a4b887.jpg"
+            alt="menu"
+          />
+          <div class="content">
+            <h3>Robert Pattinson Çizimi</h3>
+
+            <div class="price">1000TL <span>1100TL</span></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img
+            src="Images/resimlerim/WhatsApp Görsel 2024-05-14 saat 15.34.27_1037f461.jpg"
+            alt="menu"
+          />
+          <div class="content">
+            <h3>Lana Del Rey Çizimi</h3>
+
+            <div class="price">1000TL <span>1100TL</span></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img
+            src="Images/resimlerim/WhatsApp Görsel 2024-05-14 saat 16.50.16_27932b3c.jpg"
+            alt="menu"
+          />
+          <div class="content">
+            <h3>Alexa Demie Çizimi</h3>
+
+            <div class="price">1000TL <span>1100TL</span></div>
+          </div>
+        </div>
+        <a href="#" class="btn">sepete ekle</a>
+      </div>
+    </header>
+    <section class="home">
+      <div class="content">
+        <h3>SANAT SANAT İÇİNDİR</h3>
+        <p id="mesajjj"></p>
+        <p>
+          Sanat, insanların ifade etmeleri, keşfetmeleri ve büyümeleri için bir
+          alan sunar. Sanat sanat için olmalıdır ki gelişimi ve hayal gücünü
+          engellenmesin.
+        </p>
+
+    
+
+        <a onclick="hoşGeldiniz()" href="#" class="btn">Sipariş vermek istiyorum</a>
+
+        <div class="galeri" id="resimGalerisi">
+          <img id="resim" class="resim" src="" alt="Resim">
+      </div>
+      <button id="nextButton">Next</button>
+  
+       
+
+
+
+        <div id="karakter">
+          <img src="Images/anime-Photoroom.png-Photoroom.png" alt="Anime Karakteri">
+          <div id="baloncuk">
+              <p id="mesaj">Merhaba, ben bir anime karakteriyim!</p>
+          </div>
+      </div>
+
+      </div>
+
+    </section>
+
+    <section class="menu">
+      <div class="baslik"><h1>ÇİZDİĞİM BAZI RESİMLER</h1></div>
+
+      <div class="box-conteiner">
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="Images/resimlerim/WhatsApp Görsel 2024-05-12 saat 13.06.04_5d69a18a.jpg"
+              alt="menu"
+            />
+
+            <h3>Stanger Things Max Çizimi</h3>
+
+            <div class="price">1000TL <span>1100TL</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">sepete ekle</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="Images/resimlerim/WhatsApp Görsel 2024-05-12 saat 13.06.04_c8a4b887.jpg"
+              alt="menu"
+            />
+
+            <h3>Robert Pattinson Çizimi</h3>
+            <div class="price">1000TL <span>1100TL</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">sepete ekle</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="Images/resimlerim/WhatsApp Görsel 2024-05-14 saat 15.34.27_1037f461.jpg"
+              alt="menu"
+            />
+
+            <h3>Lana Del Rey Çizimi</h3>
+            <div class="price">1000TL<span>1100TL</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">sepete ekle</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="Images/resimlerim/WhatsApp Görsel 2024-05-14 saat 16.50.16_27932b3c.jpg"
+              alt="menu"
+            />
+
+            <h3>Alexa Demie Çizimi</h3>
+            <div class="price">1000TL <span>1100TL</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">sepete ekle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! products section start  -->
+    <section class="sipariş" id="sipariş">
+      <div class="baslik">
+        <h1>özel <span>siparişler</span></h1>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <a href="#" class="name"> <span>Karakalem Potre</span></a>
+          </div> 
+
+         
+          <div class="image">
+            <img
+              src="Images/resimlerim/WhatsApp Görsel 2024-05-14 saat 17.07.39_779a177c.jpg"
+              alt=""
+            />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">1000tl</b>
+              <span class="amount">200 gram A3 Kağıt ile</span>
+            </div>
+            <div class="sipariş-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <a href="#" class="name"><span>Renkli Potre</span></a>
+          </div>
+          <div class="image">
+            <img
+              src="Images/resimlerim/WhatsApp Görsel 2024-05-14 saat 15.34.26_b8192d4e.jpg"
+              alt=""
+            />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">1400t</b>
+              <span class="amount">200 gram A3 Kağıt ile</span>
+            </div>
+            <div class="sipariş-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box dark-bg">
+          <div class="box-head">
+            <a href="#" class="name"><span>Özel sipariş</span></a>
+          </div>
+          <div class="image">
+            <img src="Images/RENKLİ KALEM.jpg" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">Ücret İstenilene Göre Karar Verilir</b>
+              <span class="amount">İstenilen Özelliklerde</span>
+            </div>
+            <div class="sipariş-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! products section end  -->
+
+
+
+    <!--! about section start  -->
+    <section class="about" id="about">
+      <div class="baslik">
+        <h1>about <span>us</span></h1>
+      </div>
+      <div class="row">
+        <div class="image">
+          <img id="resim2" src="Images/hakkımda2.jpg" alt="about" />
+          <button class="degistir" onclick="resimDegistir()">Değiştir</button>
+        </div>
+        <div class="content">
+          <h3>What Is The Secret Recipe Of Our Burgers?</h3>
+          <p>
+            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
+            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
+            Soluta Perferendis!
+          </p>
+          <p>
+            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
+            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
+            Soluta Perferendis!
+          </p>
+          <p>
+            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
+            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
+            Soluta Perferendis!
+          </p>
+
+          <a href="#" class="btn">learn more</a>
+
+        </div>
+      
+      </div>
+    </section>
+    <!--! about section end  -->
+
+    <!--! blogs section start  -->
+    <section class="blogs" id="blogs">
+      <div class="baslik">
+        <h1>our <span>blog</span></h1>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="Images/Ekran görüntüsü 2024-05-16 184903.png"
+              alt="blog"
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">HESABIMI AÇMAYA NASIL KARAR VERDİM?</a>
+            <span>kendimceart/ 2023</span>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Temporibus, Laudantium!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="Images/ekrangörüntüsü2.png" alt="blog" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">ÇİZİM YAPMAYA NE ZAMAN BAŞLADIM?</a>
+            <span>kendimceart / 2023</span>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Temporibus, Laudantium!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="Images/Faber-Castell® Goldfaber™ 24 Color Pencil Tin Set _ Michaels®.jpeg"
+              alt="blog"
+            />
+          </div>
+          <div class="content">
+            <a href="#" class="title">KULLANDIĞIM KALEMLER?</a>
+            <span>Kendimceart / 2023</span>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Temporibus, Laudantium!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! blogs section end  -->
+
+    <!--! review section start  -->
+    <section class="review" id="review">
+      <h1 class="baslik">customer's <span>review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="Images/TAVŞAN-Photoroom.png-Photoroom.png" alt="quote" />
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla
+            Repellendus Similique Porro Explicabo, Blanditiis Voluptatibus
+            Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum
+            Ducimus! Officia.
+          </p>
+          <img src="Images/ADAM.jpg" alt="avatar" class="user" />
+          <h3>SKUNA</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="Images/penguen-Photoroom.png-Photoroom.png" alt="quote" />
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla
+            Repellendus Similique Porro Explicabo, Blanditiis Voluptatibus
+            Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum
+            Ducimus! Officia.
+          </p>
+          <img src="Images/KADIN.jpg" vata alt="avatar" class="user" />
+          <h3>NANA</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="Images/kurbağa-Photoroom.png-Photoroom.png" alt="quote" />
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla
+            Repellendus Similique Porro Explicabo, Blanditiis Voluptatibus
+            Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum
+            Ducimus! Officia.
+          </p>
+          <img src="Images/NARUTO.jpg" alt="avatar" class="user" />
+          <h3>NARUTO</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! review section end  -->
+
+    <!--! contact section start  -->
+    <section class="contact" id="contact">
+      <div class="baslik">
+        <h1>contact <span>us</span></h1>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6188.867009265874!2d34.1238368443552!3d39.14212068669096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d572d2fa7b2291%3A0x7f5b14385700cd72!2sK%C4%B1r%C5%9Fehir%20Ahi%20Evran%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1715725178452!5m2!1str!2str"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form>
+          <div class="contactdiv">
+            
+            <a href="contact.html">CONTACTT</a></div>
+           <p>contact linkine basarak contact html sayfasına gidebilirsin</p>
+         
+        </form>
+      </div>
+    </section>
+    <!--! contact section end  -->
+    <!-- anket section start-->
+    <section class="anket">
+      <h2>Sayfamızı Nasıl Buldunuz? </h2>
+      <form id="anketFormu">
+          <label for="isim">İsim:</label><br>
+          <input type="text" id="isim" name="isim"><br><br>
+          <label for="memnuniyet">Memnuniyet Derecesi:</label><br>
+          <select id="memnuniyet" name="memnuniyet">
+              <option value="cokMemnun">Çok Memnun</option>
+              <option value="memnun">Memnun</option>
+              <option value="orta">Orta</option>
+              <option value="memnunDegil">Memnun Değil</option>
+              <option value="hicMemnunDegil">Hiç Memnun Değil</option>
+          </select><br><br>
+          <button type="button" onclick="anketiGonder()">Gönder</button>
+      </form>
+     
+<div>
+
+      <div id="zaman"></div>
+
+      <p id="mesaj"></p>
+  <button id="goToTopBtn">Top</button>
+
+
+
+
+    </section> 
+    <section class="gizle"> 
+      
+      <button onclick="toggleVisibility()">Gizle/Göster</button>
+    <div id="content" style="display: block;">
+      <p>BU METNİ GİZLEYEBİLİRSİN SADECE BUTONA TIKLA</p>
+    </div>
+    
+  
+  </section>
+
+  <section>
+    <p id="yazı">OOOO YAZI BÜYÜYORMUŞŞŞŞŞ</p>
+
+<button onclick="increaseFontSize()">Büyüt</button>
+<button onclick="decreaseFontSize()">Küçült</button>
+
+
+  </section>
+
+  <section class="animasyon">
+    <div id="elementToAnimate"></div>
+
+    <button id="animateButton">Animasyonu Başlat</button>
+
+
+  </section>
+<section class="fade">
+  <div id="elementToFadeOut" class="fade-element"></div>
+
+<button id="fadeOutButton">Gizle</button>
+<button id="fadeInButton">Göster</button>
+
+</section>
+
+<button id="myButton">Tıkla</button>
+
+
+<div id="myDiv">
+  <!-- Bu div'e dinamik olarak bir paragraf eklenecek -->
+</div>
+    
+   
+
+    <!--! footer section start  -->
+     
+    <section class="footer">
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="links">
+        <a href="#">KENDİMCEART</a>
+        <a href="#">ÇİZDİĞİM BAZI RESİMLER</a>
+        <a href="#">ÖZEL SİPARİŞLER</a>
+        <a href="#">HAKKIMDA</a>
+
+        <a href="#">BLOGLARIM</a>
+        <a href="#">BİZİ DEĞERLENDİR</a>
+      </div>
+
+      
+  
+  <span class="yildiz" onclick="oyVer(1)">★</span>
+  <span class="yildiz" onclick="oyVer(2)">★</span>
+  <span class="yildiz" onclick="oyVer(3)">★</span>
+  <span class="yildiz" onclick="oyVer(4)">★</span>
+  <span class="yildiz" onclick="oyVer(5)">★</span>
+  <p id="oy"></p>
+
+</div>
+      <div class="credit">
+        <span>İkbal Kaban</span> Tarafından yapıldı | Tüm Hakları Gizlidir
+      </div>
+    </section>
+    <!--! footer section end  -->
+
+    <script src="JavaScript/Main.js"></script>
+   
+
+
+  
+  </body>
+</html>
